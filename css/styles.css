@@ -1,0 +1,204 @@
+:root {
+--primary-text-color: #434455;
+--secondary-text-color: #2E2F42;
+--background-color: #ffffff;
+--change-color-link: #4D5AE5;
+--change-color-button: #404BBF;
+--secondary-background-color: #F4F4FD;
+--third-text-color: #E7E9FC;
+}
+
+body {
+    color:var(--primary-text-color);
+    background-color: var(--background-color);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.02em;
+}
+/* Навигация */
+.navigation-list-link {
+    color: var(--secondary-text-color); 
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.navigation-list-link:hover,
+.navigation-list-link:focus {
+    color: var(--change-color-link);
+}
+
+.navigation-list {
+    list-style-type: none;
+}
+
+/* Контакты навигации */
+.contacts-list-link {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.5;
+    text-decoration: none;
+    font-style: normal;
+}
+.contacts-list-link:hover,
+.contacts-list-link:focus {
+    color: var(--change-color-link);
+}
+
+.contacts-list {
+    list-style-type: none;
+}
+
+/* Секция hero */
+.hero {
+    background-color: var(--secondary-text-color);
+}
+.hero-title {
+    color: var(--background-color);
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+}
+
+.hero-button {
+    background-color: var(--change-color-link);
+    color: var(--background-color);
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--change-color-button);
+}
+
+/* Секция слоган */
+.slogan-list-title {
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.slogan-list-text {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.slogan-list {
+    list-style-type: none;
+}
+
+/* Секция примеры работ */
+.works-title {
+    color: var(--secondary-text-color);
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+}
+
+.works-list {
+    list-style-type: none;
+}
+
+/* Секция наша команда */
+.team-title {
+    color: var(--secondary-text-color);
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+}
+
+.team-list-title {
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.team-list-text {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.team {
+    background-color: var(--secondary-background-color);
+}
+
+.team-list {
+    list-style-type: none;
+}
+
+/* Подвал */
+.about {
+    background-color: var(--secondary-text-color);
+}
+
+.about-container-text {
+    color: var(--third-text-color);
+    font-size: 16px;
+    line-height: 1.5;
+}
+/* Портфолио-примеры работ */
+.examples-list-title {
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.examples-list-text {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.examples-list {
+    list-style-type: none;
+}
+
+/* Кнопки (портфолио) */
+.container-list-button {
+    background-color: var(--third-text-color);
+    color: var(--change-color-link);
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    letter-spacing: 0.04em;
+}
+
+.container-list-button:hover,
+.container-list-button:focus {
+    background-color: var(--change-color-button);
+    color: var(--background-color);
+}
+
+.container-list {
+    list-style-type: none;
+}
+
+/* Логотип */
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--change-color-link);
+    letter-spacing: 0.03em
+}
+
+.logo-studio {
+    color: var(--secondary-text-color);
+}
+
+.logo-studio-footer {
+    color: var(--secondary-background-color);
+}
