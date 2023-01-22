@@ -14,8 +14,24 @@ body {
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.02em;
 }
+
+.list {
+    list-style-type: none;  
+    padding: 0;
+    margin: 0;  
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.section-no-padding {
+    padding-top: 0px;
+}
+
 /* Навигация */
-.navigation-list-link {
+.navigation-link {
     color: var(--secondary-text-color); 
     font-weight: 500;
     font-size: 16px;
@@ -23,37 +39,32 @@ body {
     text-decoration: none;
 }
 
-.navigation-list-link:hover,
-.navigation-list-link:focus {
+.navigation-link:hover,
+.navigation-link:focus {
     color: var(--change-color-link);
 }
 
-.navigation-list {
-    list-style-type: none;
-}
-
 /* Контакты навигации */
-.contacts-list-link {
+.contacts-link {
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.5;
     text-decoration: none;
     font-style: normal;
 }
-.contacts-list-link:hover,
-.contacts-list-link:focus {
+.contacts-link:hover,
+.contacts-link:focus {
     color: var(--change-color-link);
-}
-
-.contacts-list {
-    list-style-type: none;
 }
 
 /* Секция hero */
 .hero {
     background-color: var(--secondary-text-color);
+
 }
 .hero-title {
+    margin-top: 0px;
+    margin-bottom: 48px;
     color: var(--background-color);
     font-size: 56px;
     line-height: 1.07;
@@ -69,6 +80,8 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     letter-spacing: 0.04em;
+    border-radius: 4px;
+    padding: 16px 32px;
 }
 
 .hero-button:hover,
@@ -82,11 +95,14 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+    margin-top: 0px;
+    margin-bottom: 8px;
 }
 
-.slogan-list-text {
+.slogan-text {
     font-size: 16px;
     line-height: 1.5;
+    margin: 0px;
 }
 
 .slogan-list {
@@ -99,10 +115,8 @@ body {
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
-}
-
-.works-list {
-    list-style-type: none;
+    margin-top: 0px;
+    margin-bottom: 72px;
 }
 
 /* Секция наша команда */
@@ -111,6 +125,8 @@ body {
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
+    margin-top: 0px;
+    margin-bottom: 72px;
 }
 
 .team-list-title {
@@ -118,50 +134,58 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+    margin-top: 32px;
+    margin-bottom: 8px;
 }
 
 .team-list-text {
     font-size: 16px;
     line-height: 1.5;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .team {
     background-color: var(--secondary-background-color);
 }
 
-.team-list {
-    list-style-type: none;
-}
-
 /* Подвал */
 .about {
     background-color: var(--secondary-text-color);
+    
+}
+
+.about-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .about-container-text {
     color: var(--third-text-color);
     font-size: 16px;
     line-height: 1.5;
+    margin-top: 16px;
 }
+
 /* Портфолио-примеры работ */
-.examples-list-title {
+.examples-title {
     color: var(--secondary-text-color);
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+    margin-top: 32px;
+    margin-bottom: 8px;
 }
 
-.examples-list-text {
+.examples-text {
     font-size: 16px;
     line-height: 1.5;
-}
-
-.examples-list {
-    list-style-type: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 /* Кнопки (портфолио) */
-.container-list-button {
+.portfolio-button {
     background-color: var(--third-text-color);
     color: var(--change-color-link);
     cursor: pointer;
@@ -171,16 +195,14 @@ body {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     letter-spacing: 0.04em;
+    border-radius: 4px;
+    padding: 12px 24px;
 }
 
-.container-list-button:hover,
-.container-list-button:focus {
+.portfolio-button:hover,
+.portfolio-button:focus {
     background-color: var(--change-color-button);
     color: var(--background-color);
-}
-
-.container-list {
-    list-style-type: none;
 }
 
 /* Логотип */
@@ -201,4 +223,10 @@ body {
 
 .logo-studio-footer {
     color: var(--secondary-background-color);
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1158px;
 }
