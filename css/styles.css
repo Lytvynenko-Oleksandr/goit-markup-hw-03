@@ -30,7 +30,28 @@ body {
     padding-top: 0px;
 }
 
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 3px solid tomato; 
+}
+
+/* Хедер */
+.menu-nav {
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
 /* Навигация */
+.navigation {
+    display: flex;
+}
+
 .navigation-link {
     color: var(--secondary-text-color); 
     font-weight: 500;
@@ -44,7 +65,28 @@ body {
     color: var(--change-color-link);
 }
 
+.navigation-list {
+    display: flex;
+    margin-left: 76px;
+}
+
+.navigation-list  .item:not(:last-child) {  
+    margin-right: 40px;
+}
+
 /* Контакты навигации */
+.contacts {
+    margin-left: auto;
+}
+
+.contacts-list {
+    display: flex;
+}
+
+.contacts-list .item:not(:first-child) {
+    margin-left: 40px;
+}
+
 .contacts-link {
     color: var(--primary-text-color);
     font-size: 16px;
@@ -60,8 +102,8 @@ body {
 /* Секция hero */
 .hero {
     background-color: var(--secondary-text-color);
-
 }
+
 .hero-title {
     margin-top: 0px;
     margin-bottom: 48px;
@@ -107,9 +149,28 @@ body {
 
 .slogan-list {
     list-style-type: none;
+    display: flex;
+}
+
+
+.slogan-list .item:not(:first-child) {
+    margin-left: 24px;
+}   
+
+.slogan-list > .item {
+    min-width: 264px;
 }
 
 /* Секция примеры работ */
+
+.works-list {
+    display: flex;
+}
+
+.works-list .item:not(:first-child) {
+    margin-left: 24px;
+}
+
 .works-title {
     color: var(--secondary-text-color);
     font-size: 36px;
@@ -120,6 +181,14 @@ body {
 }
 
 /* Секция наша команда */
+.team-list {
+    display: flex;
+}
+
+.team-list .item:not(:first-child) {
+    margin-left: 24px;
+}
+
 .team-title {
     color: var(--secondary-text-color);
     font-size: 36px;
@@ -136,6 +205,7 @@ body {
     line-height: 1.2;
     margin-top: 32px;
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .team-list-text {
@@ -143,6 +213,8 @@ body {
     line-height: 1.5;
     margin-top: 0px;
     margin-bottom: 0px;
+    padding-bottom: 32px;
+    text-align: center;
 }
 
 .team {
@@ -152,22 +224,38 @@ body {
 /* Подвал */
 .about {
     background-color: var(--secondary-text-color);
-    
-}
-
-.about-container {
     padding-top: 100px;
     padding-bottom: 100px;
+    padding-left: auto;
 }
 
-.about-container-text {
+.about-text {
     color: var(--third-text-color);
     font-size: 16px;
     line-height: 1.5;
     margin-top: 16px;
+    margin-bottom: 0px;
 }
 
 /* Портфолио-примеры работ */
+.examples-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.examples-list .item {
+    margin-right: 24px;
+    margin-bottom: 48px;
+}
+
+.examples-list .item:nth-child(3n) {
+    margin-right: 0px;
+}
+
+.examples-list .item:nth-child(n + 7) {
+    margin-bottom: 0px;
+}
+
 .examples-title {
     color: var(--secondary-text-color);
     font-weight: 500;
@@ -185,6 +273,14 @@ body {
 }
 
 /* Кнопки (портфолио) */
+.portfolio-list {
+    display: flex;
+}
+
+.portfolio-list .item:not(:first-child) {
+    margin-left: 24px;    
+}
+
 .portfolio-button {
     background-color: var(--third-text-color);
     color: var(--change-color-link);
@@ -197,6 +293,8 @@ body {
     letter-spacing: 0.04em;
     border-radius: 4px;
     padding: 12px 24px;
+    border-color: var(--third-text-color);
+    border: 1px;
 }
 
 .portfolio-button:hover,
@@ -223,10 +321,4 @@ body {
 
 .logo-studio-footer {
     color: var(--secondary-background-color);
-}
-
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1158px;
 }
