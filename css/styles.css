@@ -174,19 +174,21 @@ h3 {
 .slogan-list {
     list-style-type: none;
     display: flex;
-    flex-basis: calc((100%-72px)/4);
     column-gap: 24px;
 }
 
-.slogan-list>.item {
-    min-width: 264px;
+.slogan-list> .item {
+    flex-basis: calc((100% - 72px)/4);
 }
 
 /* Секция примеры работ */
 .works-list {
     display: flex;
-    flex-basis: calc((100%-48px)/3);
     column-gap: 24px;
+}
+
+.works-list > .item {
+    flex-basis: calc((100% - 48px)/3);
 }
 
 .works-title {
@@ -205,8 +207,11 @@ h3 {
 /* Секция наша команда */
 .team-list {
     display: flex;
-    flex-basis: calc((100%-72px)/4);
     column-gap: 24px;
+}
+
+.team-list > .item {
+    flex-basis: calc((100% - 72px)/4);
 }
 
 .team-title {
@@ -277,15 +282,18 @@ h3 {
 .examples-list {
     display: flex;
     flex-wrap: wrap; 
-    flex-basis: calc((100%-48px)/3);
     column-gap: 24px;
     row-gap: 48px;
 }
 
-.examples-list > .item > img {
+.examples-list img {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+.examples-list >.item {
+    flex-basis: calc((100% - 48px) / 3);
 }
 
 .decoration-text {
@@ -310,6 +318,7 @@ h3 {
     line-height: 1.5;
     margin-top: 0px;
     margin-bottom: 0px;
+    margin-right: 0px;
 }
 
 /* Кнопки (портфолио) */
@@ -317,7 +326,6 @@ h3 {
     display: flex;
     justify-content: center;
     margin-bottom: 72px;
-    flex-basis: calc((100%-96px)/5);
     column-gap: 24px;
 }
 
